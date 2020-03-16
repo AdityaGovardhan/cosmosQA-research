@@ -184,7 +184,7 @@ class DataProcessor(object):
     def _read_csv(cls, input_file):
         """Reads a csv file."""
         lines = []
-        with open(input_file, 'r') as csv_file:
+        with open(input_file, 'r', encoding='utf8') as csv_file:
             reader = csv.DictReader(csv_file)
             for row in reader:
                 lines.append(row)

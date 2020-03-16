@@ -31,7 +31,7 @@ Deleting conda environment:
 
 - `conda deactivate`
 
-- `conda env remove -n cosmos --all`
+- `conda env remove -n cosmos`
 
 ___
 
