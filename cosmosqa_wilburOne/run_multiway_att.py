@@ -810,4 +810,6 @@ def main():
 if __name__ == "__main__":
     import sys
     print(sys.path)
+    from apex.fp16_utils import FP16_Optimizer
+    print('here 3')
     main()
