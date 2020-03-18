@@ -9,6 +9,17 @@ Status:
 
 ___
 
+Individual Efforts:
+=======
+
+- Kunal : Trying to run cosmosqa_wilburOne on asu agave. Current status is that the cluster is not picking up my job. 
+
+- wilburOne's baseline model setup in progress
+
+- research paper reading in progress
+
+___
+
 Guide to setup cosmos conda environment
 ---------------------------------------
 
