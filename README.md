@@ -23,7 +23,7 @@ Also, trying to read the [https://arxiv.org/pdf/1904.01172.pdf] paper in order t
 3. Tried running cosmosqa_wilburOne on Windows Subsystem for Linux (WSL), couldn't proceed further since WSL doesn't have GPU access
 4. Currently debugging running cosmosqa_wilburOne on [Google Colab](https://colab.research.google.com/drive/1sQ61kjP3AB1fxOCj_vJfIXnHn_X1CF9D).
 
-Vasishta : Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along with Aditya. Trying to understand the project in hand better.
+- Vasishta : Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along with Aditya. Trying to understand the project in hand better.
 ___
 
 Guide to setup cosmos conda environment
