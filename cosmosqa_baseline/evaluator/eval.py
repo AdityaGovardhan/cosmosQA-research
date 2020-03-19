@@ -28,7 +28,7 @@ def main(args):
     results = {
         'accuracy': accuracy
     }
-    with open(metrics_output_file, "w") as f:
+    with open(metrics_output_file, "w+") as f:
         f.write(json.dumps(results))
 
 

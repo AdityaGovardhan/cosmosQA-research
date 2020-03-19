@@ -29,44 +29,14 @@ Also, trying to read the [https://arxiv.org/pdf/1904.01172.pdf] paper in order t
 1. Went through the CosmosQA paper and forum "http://jalammar.github.io/illustrated-bert/" to get some idea about normal BERT working. Also going trying to go through GPT2 paper as it has been used to improve the performance of cosmosQA.
 2. Initially, was trying to run the project(cosmosqa_wilburOne) on my windows system but didnt succeed due to failure in installing apex module correctly.
 3. Installed Ubuntu as dual boot. Tried running cosmosqa_wilburOne. Had issues with cuda installation initially but later, could install apex, cuda and was able to acees GPU computes on my system. Currently, having issues with GPU memory consumption by cuda. 
-___
-
-Guide to setup cosmos conda environment
----------------------------------------
-
-Installing and creating conda environment:
-
-- Get the installer from here: https://docs.conda.io/en/latest/miniconda.html, install conda (make sure it is available in $path)
-
-- Redirect to github project base directory in command line
-
-- Execute: `conda env create -f conda-env.yml` # this will install required project dependencies
-
-- Activate environment: `conda activate cosmos` # this will activate conda environment
-
-
-Updating conda environment:
-
-- In order to update depdendencies, add that dependency in conda-env.yml file and run `conda env update -f conda-env.yml`
-
-Deleting conda environment:
-
-- `conda deactivate`
-
-- `conda env remove -n cosmos`
 
 ___
 
 Running cosmosqa_baseline:
 --------------------------
-This random baseline is provided by [Allen AI](https://leaderboard.allenai.org/cosmosqa/submissions/public) for demonstrating input and output of data. ([GitHub](https://github.com/allenai/mosaic-leaderboard/tree/master/cosmosqa))
+- This random baseline is provided by [Allen AI](https://leaderboard.allenai.org/cosmosqa/submissions/public) for demonstrating input and output of data.
+- [Google Colab link](blablbla.com)
 
-Make sure you have activated cosmos conda environment
 
-Run random model:
-`python ./cosmosqa_baseline/baselines/random-baseline/random_baseline.py --input-file ./official_data/train.jsonl --output-file ./results/random_predictions.lst`
-
-Evaluate random model:
-`python ./cosmosqa_baseline/evaluator/eval.py --labels_file ./official_data/train-labels.lst --preds_file ./results/random_predictions.lst --metrics_output_file ./results/random_metrics.json`
 
 

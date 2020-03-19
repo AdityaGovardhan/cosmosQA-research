@@ -1,4 +1,7 @@
 *.pyc
+
 .vscode
 .idea
-results
+
+random_predictions.lst
+random_metrics.json
