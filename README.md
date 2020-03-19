@@ -1,16 +1,20 @@
 Status:
 =======
 
-- random baseline model provided by Allen AI setup, ran and tested
+- random baseline model provided by [Allen AI](https://leaderboard.allenai.org/cosmosqa/submissions/public) is setup, ran and tested ([Google Colab link](https://colab.research.google.com/drive/12ufgKApJTgajMzcasmyYMRwxWrCe-ws5))
 
-- wilburOne's baseline model setup in progress
+- [Lifu Huang et al.](https://wilburone.github.io/cosmos/)'s multiway attention model is setup, ran and tested ([Google Colab link](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH))
 
-- research paper reading in progress
+- [RoBERTa baseline model](https://leaderboard.allenai.org/cosmosqa/submission/bpk5sc1uh8c72d6ujcmg) setup in progress
+
+- Understanding BERT in progress
+
+- Error dataset analysis to be distributed among team members
 
 ___
 
 Individual Efforts:
-=======
+-------------------
 
 - Kunal : Trying to run cosmosqa_wilburOne on asu agave. Current status is that the cluster is not picking up my job. 
 
@@ -22,6 +26,7 @@ Also, trying to read the [https://arxiv.org/pdf/1904.01172.pdf] paper in order t
 2. Tried running cosmosqa_wilburOne on Windows + GPU setup, but couldn't proceed further since 'apex' library by NVIDIA has limited support for CUDA in Windows.
 3. Tried running cosmosqa_wilburOne on Windows Subsystem for Linux (WSL), couldn't proceed further since WSL doesn't have GPU access
 4. Currently debugging running cosmosqa_wilburOne on [Google Colab](https://colab.research.google.com/drive/1sQ61kjP3AB1fxOCj_vJfIXnHn_X1CF9D).
+5. Multiway Attention model setup successfully on [Google Colab](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH)
 
 - Vasishta : Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along with Aditya. Trying to understand the project in hand better.
 
@@ -34,9 +39,12 @@ ___
 
 Running cosmosqa_baseline:
 --------------------------
-- This random baseline is provided by [Allen AI](https://leaderboard.allenai.org/cosmosqa/submissions/public) for demonstrating input and output of data.
-- [Google Colab link](blablbla.com)
+- This random baseline model is provided by [Allen AI](https://leaderboard.allenai.org/cosmosqa/submissions/public) for demonstrating input and output of data.
+- [Google Colab link](https://colab.research.google.com/drive/12ufgKApJTgajMzcasmyYMRwxWrCe-ws5)
 
+___
 
-
-
+Running cosmosqa_wilburOne:
+---------------------------
+- This multiway attention model is provided by [Lifu Huang et al.](https://wilburone.github.io/cosmos/).
+- [Google Colab link](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH)
