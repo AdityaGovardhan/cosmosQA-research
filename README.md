@@ -37,12 +37,11 @@ Individual Efforts:
 5. Multiway Attention model setup successfully on [Google Colab](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH)
 
 - Vasishta : 
-1. Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along with Aditya.
-2. Trying to understand the project in hand better.
-3. Setup and running roBERTa on Google Colab.
-4. Debugged roBERTa backward compatibilty issue - "KeyError: 'token_type_ids'" along with Aditya.
-5. Tried older roBERTa model to bypass the token type embedding layer issue. 
-6. Phase 1 Report.
+1. Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along
+2. Setup and running roBERTa on Google Colab.
+3. Debugged roBERTa backward compatibilty issue - "KeyError: 'token_type_ids'".
+4. Tried older roBERTa model to bypass the token type embedding layer issue.
+5. Phase 1 Report.
 
 
 - Suryanshu :
