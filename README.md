@@ -16,7 +16,11 @@ ___
 Individual Efforts:
 -------------------
 
-- Kunal : Trying to run cosmosqa_wilburOne on asu agave. Current status is that the cluster is not picking up my job. 
+- Kunal : 
+1. Trying to run cosmosqa_wilburOne on asu agave. Current status is that the cluster is not picking up my job. 
+2. Attempting to run the Roberta model on CoLAB.
+3. Setting up a framework for performing error analysis on the test and validation datasets.
+4. Phase 1 report.
 
 - Jay : 
 
