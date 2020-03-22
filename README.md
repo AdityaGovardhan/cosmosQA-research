@@ -36,7 +36,14 @@ Individual Efforts:
 4. Currently debugging running cosmosqa_wilburOne on [Google Colab](https://colab.research.google.com/drive/1sQ61kjP3AB1fxOCj_vJfIXnHn_X1CF9D).
 5. Multiway Attention model setup successfully on [Google Colab](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH)
 
-- Vasishta : Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along with Aditya. Trying to understand the project in hand better.
+- Vasishta : 
+1. Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along with Aditya.
+2. Trying to understand the project in hand better.
+3. Setup and running roBERTa on Google Colab.
+4. Debugged roBERTa backward compatibilty issue - "KeyError: 'token_type_ids'" along with Aditya.
+5. Tried older roBERTa model to bypass the token type embedding layer issue. 
+6. Phase 1 Report.
+
 
 - Suryanshu :
 1. Went through the CosmosQA paper and forum "http://jalammar.github.io/illustrated-bert/" to get some idea about normal BERT working. Also going trying to go through GPT2 paper as it has been used to improve the performance of cosmosQA.
