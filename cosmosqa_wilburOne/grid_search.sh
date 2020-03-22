@@ -2,14 +2,14 @@
 
 task="commonsenseqa"
 
-batchsizes=( 8 12 16 20 )
+batchsizes=( 12 16 )
 for s in "${batchsizes[@]}"
 do
-    learningrates=( 2e-5 3e-5 5e-5 )
+    learningrates=( 5e-5 )
 
     for l in "${learningrates[@]}"
     do
-        epochs=( 10 )
+        epochs=( 2 )
 
         for e in "${epochs[@]}"
         do
