@@ -1,13 +1,15 @@
 Status:
 =======
 
+- Error analysis completed for multiway attention model and RoBERTa (base) model ([link](https://www.google.com))
+
+- Please check out [AdityaGovardhan/transformer](https://github.com/AdityaGovardhan/transformers) GitHub repository for modifications related to RoBERTa.
+
 - random baseline model provided by [Allen AI](https://leaderboard.allenai.org/cosmosqa/submissions/public) is setup, ran and tested ([Google Colab link](https://colab.research.google.com/drive/12ufgKApJTgajMzcasmyYMRwxWrCe-ws5))
 
 - [Lifu Huang et al.](https://wilburone.github.io/cosmos/)'s multiway attention model is setup, ran and tested ([Google Colab link](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH))
 
 - [RoBERTa baseline model](https://huggingface.co/transformers/model_doc/roberta.html) setup, ran and tested ([Google Colab link](https://colab.research.google.com/drive/1TL8QsMCY2zog_KYjiVbyi3WN5l_r-uAA))
-
-- Error dataset analysis completed for multiway attention model and RoBERTa (base) model
 
 ___
 
@@ -29,11 +31,13 @@ Individual Efforts:
 4. The updates results with different parameters are being stored in the results/ folder and to be later used for error analysis purposes.
 
 - Aditya :
-1. random baseline model provided by Allen AI setup, ran and tested
+1. Random baseline model provided by Allen AI setup, ran and tested on [Google Colab](https://colab.research.google.com/drive/12ufgKApJTgajMzcasmyYMRwxWrCe-ws5)
 2. Tried running cosmosqa_wilburOne on Windows + GPU setup, but couldn't proceed further since 'apex' library by NVIDIA has limited support for CUDA in Windows.
 3. Tried running cosmosqa_wilburOne on Windows Subsystem for Linux (WSL), couldn't proceed further since WSL doesn't have GPU access
-4. Currently debugging running cosmosqa_wilburOne on [Google Colab](https://colab.research.google.com/drive/1sQ61kjP3AB1fxOCj_vJfIXnHn_X1CF9D).
-5. Multiway Attention model setup successfully on [Google Colab](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH)
+4. Multiway Attention model ran successfully on [Google Colab](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH), debugged issues along with Jay and Kunal
+5. RoBERTa baseline model ran successfully on [Google Colab](https://colab.research.google.com/drive/1TL8QsMCY2zog_KYjiVbyi3WN5l_r-uAA), debugged issues along with Vasishta and Suryanshu
+6. Error Analysis for multiway attention model
+7. Report
 
 - Vasishta : 
 1. Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along
