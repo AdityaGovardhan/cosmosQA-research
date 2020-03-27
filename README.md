@@ -21,6 +21,7 @@ Individual Efforts:
 2. Attempting to run the Roberta model on CoLAB.
 3. Setting up a framework for performing error analysis on the test and validation datasets.
 4. Phase 1 report.
+5. Performed Error Analysis on 15 samples from 1000-1500 in the Validation set data
 
 - Jay : 
 
