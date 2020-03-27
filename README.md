@@ -52,6 +52,10 @@ Individual Efforts:
 1. Went through the CosmosQA paper and forum "http://jalammar.github.io/illustrated-bert/" to get some idea about normal BERT working. Also going trying to go through GPT2 paper as it has been used to improve the performance of cosmosQA.
 2. Initially, was trying to run the project(cosmosqa_wilburOne) on my windows system but didnt succeed due to failure in installing apex module correctly.
 3. Installed Ubuntu as dual boot. Tried running cosmosqa_wilburOne. Had issues with cuda installation initially but later, could install apex, cuda and was able to acees GPU computes on my system. Currently, having issues with GPU memory consumption by cuda. 
+4. Able to run pre trained RoBERTa base and large model on [Google colab](https://colab.research.google.com/drive/1CpaWpCoeEzmKle0XHsVnVLy5iDlG9Y9D) but on commonsense dataset. Still trying to modify it to make it evaluate against Cosmos QA dataset, which hpefully would result in better prediction.
+5. Modified RoBERTa baseline model to output evaluation result with all details such as predicted and expected labels.
+6. Error analysis for both Cosmos QA baseline mode as well RoBERTa baseline model.
+7. Phase 1 report.
 
 ___
 
