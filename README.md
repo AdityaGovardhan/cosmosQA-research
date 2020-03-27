@@ -28,7 +28,10 @@ Individual Efforts:
 1. Was able to run the cosmosqa_wilburOne on my local CPU machine (without GPUs), but since the training + evaluation with huge datasize shall take time, trying to host the process on either Google Colab/Cloud Shell - but facing issues with installing Nvidia/Apex and few other version conflicts. 
 2. Also, trying to read the [https://arxiv.org/pdf/1904.01172.pdf] paper in order to come up with model tweaks for error analysis.
 3. Now running the cosmosqa_wilburOne process on my [Google Colab](https://colab.research.google.com/drive/1JKLkB238zHKXNNdGA9H2kCXhAVTXCrjb#scrollTo=Cvv7loTb2SC0) account with varying values of batch-sizes, epochs and train_examples (training data)
-4. The updates results with different parameters are being stored in the results/ folder and to be later used for error analysis purposes.
+4. The updatesd results with different parameters are being stored in the results/ folder and to be later used for error analysis purposes. 
+5. Recorded a maximum accuracy of 60.77 using this model, with set hyper-parameters (train_examples=5000, epochs=2, lr=3e-5, batchsize=12)
+6. Did and Error analysis for 15 samples out of the results/b12l3e-5ep2.txt for the multi-way attention model, and the inferences on produced errors are visible here as different [sheets](https://docs.google.com/spreadsheets/u/1/d/1a_8sPE_fVxywv4R6Ao9ueT2aHLBynscceYnhePdmHEc/edit#gid=62726107)
+7. Preliminary results and conclusions are well documented in /COSMOS_QA__Phase_1_Report_CSE_576.pdf
 
 - Aditya :
 1. Random baseline model provided by Allen AI setup, ran and tested on [Google Colab](https://colab.research.google.com/drive/12ufgKApJTgajMzcasmyYMRwxWrCe-ws5)
