@@ -1,7 +1,7 @@
 Status:
 =======
 
-- Error analysis completed for multiway attention model and RoBERTa (base) model ([link](https://www.google.com))
+- Error analysis completed for multiway attention model and RoBERTa (base) model ([link](https://drive.google.com/open?id=1w4ERfxi4kN9f_DqFKnrp77pqYgjc6rIS))
 
 - Please check out [AdityaGovardhan/transformer](https://github.com/AdityaGovardhan/transformers) GitHub repository for modifications related to RoBERTa.
 
@@ -57,12 +57,19 @@ ___
 
 Running cosmosqa_baseline:
 --------------------------
-- This random baseline model is provided by [Allen AI](https://leaderboard.allenai.org/cosmosqa/submissions/public) for demonstrating input and output of data.
+- This random baseline model is provided by [Allen AI](https://leaderboard.allenai.org/cosmosqa/submissions/public) for demonstrating input and output of data
 - [Google Colab link](https://colab.research.google.com/drive/12ufgKApJTgajMzcasmyYMRwxWrCe-ws5)
 
 ___
 
 Running cosmosqa_wilburOne:
 ---------------------------
-- This multiway attention model is provided by [Lifu Huang et al.](https://wilburone.github.io/cosmos/).
+- This multiway attention model is provided by [Lifu Huang et al.](https://wilburone.github.io/cosmos/)
 - [Google Colab link](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH)
+
+___
+
+Running RoBERTa base:
+---------------------
+- This RoBERTa base model is provided by [huggingface](https://huggingface.co/transformers/model_doc/roberta.html)
+- [Google Colab link](https://colab.research.google.com/drive/1TL8QsMCY2zog_KYjiVbyi3WN5l_r-uAA)
