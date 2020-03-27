@@ -45,6 +45,7 @@ Individual Efforts:
 3. Debugged roBERTa backward compatibilty issue - "KeyError: 'token_type_ids'".
 4. Tried older roBERTa model to bypass the token type embedding layer issue.
 5. Phase 1 Report.
+6. Performed Error Analysis on 19 samples from 2000-2500 in the Validation set data
 
 
 - Suryanshu :
