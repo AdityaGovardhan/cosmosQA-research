@@ -5,9 +5,9 @@ Status:
 
 - [Lifu Huang et al.](https://wilburone.github.io/cosmos/)'s multiway attention model is setup, ran and tested ([Google Colab link](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH))
 
-- [RoBERTa baseline model](https://colab.research.google.com/drive/1TL8QsMCY2zog_KYjiVbyi3WN5l_r-uAA) setup, ran and tested
+- [RoBERTa baseline model](https://huggingface.co/transformers/model_doc/roberta.html) setup, ran and tested ([Google Colab link](https://colab.research.google.com/drive/1TL8QsMCY2zog_KYjiVbyi3WN5l_r-uAA))
 
-- Error dataset analysis completed for multiway attention model and RoBERTa (base) model.
+- Error dataset analysis completed for multiway attention model and RoBERTa (base) model
 
 ___
 
