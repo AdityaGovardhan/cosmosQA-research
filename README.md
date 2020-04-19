@@ -32,6 +32,9 @@ Individual Efforts:
 5. Recorded a maximum accuracy of 60.77 using this model, with set hyper-parameters (train_examples=5000, epochs=2, lr=3e-5, batchsize=12)
 6. Did and Error analysis for 15 samples out of the results/b12l3e-5ep2.txt for the multi-way attention model, and the inferences on produced errors are visible here as different [sheets](https://docs.google.com/spreadsheets/u/1/d/1a_8sPE_fVxywv4R6Ao9ueT2aHLBynscceYnhePdmHEc/edit#gid=62726107)
 7. Preliminary results and conclusions are well documented in /COSMOS_QA__Phase_1_Report_CSE_576.pdf
+8. Currently working on implementing the semi-supervised approach for multiple choice question answering task as defined here in the paper - [Improving Language Understanding
+by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) by OpenAI on the [official CosmosQA dataset](https://github.com/wilburOne/cosmosqa/tree/master/data/)
+9. The results and code for this approach are stored in the folder Semi-Supervised Approach.
 
 - Aditya :
 1. Random baseline model provided by Allen AI setup, ran and tested on [Google Colab](https://colab.research.google.com/drive/12ufgKApJTgajMzcasmyYMRwxWrCe-ws5)
