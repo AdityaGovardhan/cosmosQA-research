@@ -22,6 +22,7 @@ Individual Efforts:
 3. Setting up a framework for performing error analysis on the test and validation datasets.
 4. Phase 1 report.
 5. Performed Error Analysis on 15 samples from 1000-1500 in the Validation set data
+6. Finetuning roberta-base model on SocialIQA dataset for incorporating social knowledge.
 
 - Jay : 
 
