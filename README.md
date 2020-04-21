@@ -23,6 +23,8 @@ Individual Efforts:
 4. Phase 1 report.
 5. Performed Error Analysis on 15 samples from 1000-1500 in the Validation set data
 6. Finetuning roberta-base model on SocialIQA dataset for incorporating social knowledge.
+7. Increased performance by finetuning on SocialIQA dataset on roberta-base from 65.92% to 67.75%. Let's call this model roberta_social_iqa
+8. Now finetuning roberta_social_iqa on the COSMOS_QA to boost performance.
 
 - Jay : 
 
