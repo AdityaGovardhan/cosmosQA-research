@@ -98,7 +98,10 @@ by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsu
 5. Modified RoBERTa baseline model to output evaluation result with all details such as predicted and expected labels.
 6. Error analysis for both Cosmos QA baseline mode as well RoBERTa baseline model.
 7. Phase 1 report.
-8. TODO Suryanshu
+8. Tried to run roBERTa Large model in huggingface, which proved to be very computationally expensive and couldn't be trained within time.
+9. Read through several papers like K-Bert, K-adapter on how to include knowledge graph into Bert and roBERTa model. 
+10. Tried implementation of Enhanced adversarial training for NLP paper but was difficult to train two Bert models.
+11. Explored some approaches for summarization. Successfully implemented Extractive summarization based approach and improved the performance. Tried several other approaches for Abstractive summarization but takes a good amount of time in embeddings part itself.
 
 ___
 
