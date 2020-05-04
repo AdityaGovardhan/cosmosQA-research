@@ -22,6 +22,9 @@ Individual Efforts:
 3. Setting up a framework for performing error analysis on the test and validation datasets.
 4. Phase 1 report.
 5. Performed Error Analysis on 15 samples from 1000-1500 in the Validation set data
+6. Finetuning roberta-base model on SocialIQA dataset for incorporating social knowledge.
+7. Increased performance by finetuning on SocialIQA dataset on roberta-base from 65.92% to 67.75%. Let's call this model roberta_social_iqa
+8. Now finetuning roberta_social_iqa on the COSMOS_QA to boost performance.
 
 - Jay : 
 
@@ -90,4 +93,8 @@ Running RoBERTa-Base Uncased (Sem-Sup Approach):
 -----------------------------------------------
 - Semi-Supervised approach for multiple choice question answering task as defined here in the paper - [Improving Language Understanding
 by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) by OpenAI on the [official CosmosQA dataset](https://github.com/wilburOne/cosmosqa/tree/master/data/)
+<<<<<<< HEAD
 - [Google Colab Link](https://colab.research.google.com/drive/1E6rILWpl5rjAp-ModE9u0PlUhbv0N59c)
+=======
+- [Google Colab Link](https://colab.research.google.com/drive/1E6rILWpl5rjAp-ModE9u0PlUhbv0N59c)
+>>>>>>> ce65e87cfea5bcd1ff984033877f471015889406
