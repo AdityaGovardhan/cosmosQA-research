@@ -15,18 +15,36 @@ Status:
 
 - Grid search performed on RoBERTa (base) model to obtain optimal baseline parameters, accuracy improved from 65.92% to 68.87%, [this Google Sheets doc](https://docs.google.com/spreadsheets/d/1bdNsVs3AJ3kZa8Dq0DejZ7PLRKJ7zqhmEhOXEZ7eFhA/edit?usp=sharing) has the results of grid search
 
-- SocialIQA approach TODO
+- SocialIQA approach TODO Kunal
 
-- Semi-supervised approach TODO
+- Semi-supervised approach TODO Jay
 
-- Knowledge graph approach TODO
+- Knowledge graph approach TODO Suryanshu
 
-- Summarization approach TODO
+- Summarization approach TODO Suryanshu
+
+Best Results:
+=============
+
+| Model | Gradient Accumulation Step | Number of Epochs | Learning Rate | Maximum Sequence Length | Batch Size | Accuracy |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| roberta-base (phase 1 results) | 2 | 3 | 5 e-05 | 80 | 16 | 65.92% |
+| roberta-base (grid search) | 3 | 5 | 5 e-05 | 192 | 16 | 68.87% |
+| roberta-base-uncased (Semi Supervised approach) | 3 | 3 | 2 e-05 | 100 | 8 | 61.13% |
+| roberta-base + finetuned on SocialIQA | 3 | 6 | 5 E-05 | 192 | 16 | 67.75 |
+| roberta-base + finetuned on SocialIQA + COSMOS finetuned | 3 | 6 | 5 E-05 | 192 | 16 | 66.2 |
+| roberta-base + sumarization + COSMOS | 3 | 5 | 5.00E-05 | 192 | 16 | 63.31 |
+| roberta-base + context + summarization + COSMOS | 3 | 5 | 5.00E-05 | 192 | 16 | 67.57 |
+
+Conclusion:
+===========
+
+TODO Jay (copy paste from report what you think is apt for a quick read)
 
 ___
 
 Individual Efforts:
--------------------
+===================
 
 - Kunal :
 1. Trying to run cosmosqa_wilburOne on asu agave. Current status is that the cluster is not picking up my job.
@@ -36,7 +54,7 @@ Individual Efforts:
 5. Performed Error Analysis on 15 samples from 1000-1500 in the Validation set data
 6. Finetuning roberta-base model on SocialIQA dataset for incorporating social knowledge.
 7. Increased performance by finetuning on SocialIQA dataset on roberta-base from 65.92% to 67.75%. Let's call this model roberta_social_iqa.
-8. Finetuned and generated a performance of 66.2 roberta_social_iqa on the COSMOS_QA to boost performance. [Google Colab](https://colab.research.google.com/drive/1QMJVB5Pf24d3x8A5OAuB4Xo7UVN3ngk-?authuser=2)
+8. Finetuned and generated a performance of 66.2 roberta_social_iqa on the COSMOS_QA to boost performance. [Google Colab](https://colab.research.google.com/drive/1QMJVB5Pf24d3x8A5OAuB4Xo7UVN3ngk-?authuser=2) TODO Kunal link not working
 
 - Jay : 
 1. Was able to run the cosmosqa_wilburOne on my local CPU machine (without GPUs), but since the training + evaluation with huge datasize shall take time, trying to host the process on either Google Colab/Cloud Shell - but facing issues with installing Nvidia/Apex and few other version conflicts.
@@ -80,6 +98,7 @@ by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsu
 5. Modified RoBERTa baseline model to output evaluation result with all details such as predicted and expected labels.
 6. Error analysis for both Cosmos QA baseline mode as well RoBERTa baseline model.
 7. Phase 1 report.
+8. TODO Suryanshu
 
 ___
 
@@ -154,23 +173,23 @@ Results:
 Running External Knowledge Infusion (SocialIQA Dataset):
 --------------------------------------------------------
 
-- TODO Google Colab Link
+- TODO Kunal Google Colab Link not working 
 
 Results:
 
 | Model | Gradient Accumulation Step | Number of Epochs | Learning Rate | Maximum Sequence Length | Batch Size | Accuracy |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| roberta-base + finetuned on SocialIQA | 3 | 6 | 5.00E-05 | 192 | 16 | 67.75 |
-| roberta-base + finetuned on SocialIQA + COSMOS finetuned | 3 | 6 | 5.00E-05 | 192 | 16 | 66.2 |
+| roberta-base + finetuned on SocialIQA | 3 | 6 | 5 E-05 | 192 | 16 | 67.75 |
+| roberta-base + finetuned on SocialIQA + COSMOS finetuned | 3 | 6 | 5 E-05 | 192 | 16 | 66.2 |
 
 Running Context Summarization:
 ------------------------------
 
-- TODO Google Colab Link
+- TODO Suryanshu Google Colab Link
 
 Results:
 
 | Model | Gradient Accumulation Step | Number of Epochs | Learning Rate | Maximum Sequence Length | Batch Size | Accuracy |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| roberta-base + sumarization + COSMOS | 3 | 5 | 5.00E-05 | 192 | 16 | 63.31 |
-| roberta-base + context + summarization + COSMOS | 3 | 5 | 5.00E-05 | 192 | 16 | 67.57 |
+| roberta-base + sumarization + COSMOS | 3 | 5 | 5 E-05 | 192 | 16 | 63.31 |
+| roberta-base + context + summarization + COSMOS | 3 | 5 | 5 E-05 | 192 | 16 | 67.57 |
