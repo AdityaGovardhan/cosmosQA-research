@@ -24,10 +24,9 @@ Individual Efforts:
 5. Performed Error Analysis on 15 samples from 1000-1500 in the Validation set data
 6. Finetuning roberta-base model on SocialIQA dataset for incorporating social knowledge.
 7. Increased performance by finetuning on SocialIQA dataset on roberta-base from 65.92% to 67.75%. Let's call this model roberta_social_iqa
-8. Now finetuning roberta_social_iqa on the COSMOS_QA to boost performance.
+8. Finetuned and generated a performance of 66.2 roberta_social_iqa on the COSMOS_QA to boost performance. [Google Colab](https://colab.research.google.com/drive/1QMJVB5Pf24d3x8A5OAuB4Xo7UVN3ngk-?authuser=2)
 
 - Jay : 
-
 1. Was able to run the cosmosqa_wilburOne on my local CPU machine (without GPUs), but since the training + evaluation with huge datasize shall take time, trying to host the process on either Google Colab/Cloud Shell - but facing issues with installing Nvidia/Apex and few other version conflicts. 
 2. Also, trying to read the [https://arxiv.org/pdf/1904.01172.pdf] paper in order to come up with model tweaks for error analysis.
 3. Now running the cosmosqa_wilburOne process on my [Google Colab](https://colab.research.google.com/drive/1JKLkB238zHKXNNdGA9H2kCXhAVTXCrjb#scrollTo=Cvv7loTb2SC0) account with varying values of batch-sizes, epochs and train_examples (training data)
@@ -46,7 +45,9 @@ by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsu
 4. Multiway Attention model ran successfully on [Google Colab](https://colab.research.google.com/drive/1_FDdq9upg6n3voJoIrG7NhjsYYid8yyH), debugged issues along with Jay and Kunal
 5. RoBERTa baseline model ran successfully on [Google Colab](https://colab.research.google.com/drive/1TL8QsMCY2zog_KYjiVbyi3WN5l_r-uAA), debugged issues along with Vasishta and Suryanshu
 6. Error Analysis for multiway attention model
-7. Report
+7. Phase 1 Report
+8. Performed Grid Search on roberta baseline model to improve model accuracy from 65.92% to 68.87%
+9. Modified trasformers code to disable checkpoint saving and ran RoBERTa-large successfully
 
 - Vasishta : 
 1. Evaluating the use of Amazon Web Service GPU instances K80 P2.xlarge to run cosmosqa_wilburOne for the project along
@@ -55,7 +56,9 @@ by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsu
 4. Tried older roBERTa model to bypass the token type embedding layer issue.
 5. Phase 1 Report.
 6. Performed Error Analysis on 19 samples from 2000-2500 in the Validation set data
-
+7. Co-ordinated in roberta-base grid search to improve accuracy by about 3%
+8. Established Kaggle platform python notebook to mitigate Google Colab issues like idle timeout and 12 hour limit
+9. Explored use of bert-large to improve accuracy
 
 - Suryanshu :
 1. Went through the CosmosQA paper and forum "http://jalammar.github.io/illustrated-bert/" to get some idea about normal BERT working. Also going trying to go through GPT2 paper as it has been used to improve the performance of cosmosQA.
