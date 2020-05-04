@@ -19,9 +19,9 @@ Status:
 
 - Semi-supervised approach TODO Jay
 
-- Knowledge graph approach TODO Suryanshu
+- Several approaches like K-Bert & K-Adapter are explored but couldn't work in available timeframe.
 
-- Summarization approach TODO Suryanshu
+- Two approaches implemented: Extractive replacing paragraph & Extractive appending paragraph. The later one obtained accuracy of 67.57% and was an improvement over baseline.[Google Colab Link](https://colab.research.google.com/drive/17I7_b5QTOWpdKhUzywyTFWXjSz6hDo3x?authuser=1)
 
 Best Results:
 =============
