@@ -17,7 +17,7 @@ Status:
 
 - SocialIQA approach TODO Kunal
 
-- Semi-supervised approach TODO Jay
+- Semi-Supervised approach: Hypothesis behind this approach is to explore a semi-supervised  approach for language understanding tasks using a combination of unsupervised pre-training and supervised fine-tuning. ([Google Colab Link](https://colab.research.google.com/drive/1E6rILWpl5rjAp-ModE9u0PlUhbv0N59c)) 
 
 - Knowledge graph approach TODO Suryanshu
 
@@ -39,7 +39,9 @@ Best Results:
 Conclusion:
 ===========
 
-TODO Jay (copy paste from report what you think is apt for a quick read)
+Based on the error analysis on baselines models, we tried to make modifications in the existing models such that the model can learn more implicit knowledge and the context. The reason model on Social IQA performed better than existing results, is because of the similarities in dataset and task we are trying to achieve. Whereas, semi-supervised approach did not give any performance boosts for the same reason.
+
+One the next steps for us would be to use pre-trained model on Social-IQA dataset to be used on cosmosqa dataset using the semi-supervised approach. Since summarization had better results than our baseline models, we use that approach to summarize the context for each data sample and use that in the fine-tuning of the model before evaluation. With a trade-off on training time, we expect such a model to perform better than the baselines.  
 
 ___
 
@@ -123,17 +125,14 @@ Running RoBERTa base:
 
 ___
 
-<<<<<<< HEAD
 Running RoBERTa-Base Uncased (Sem-Sup Approach):
 -----------------------------------------------
 - Semi-Supervised approach for multiple choice question answering task as defined here in the paper - [Improving Language Understanding
 by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) by OpenAI on the [official CosmosQA dataset](https://github.com/wilburOne/cosmosqa/tree/master/data/)
-<<<<<<< HEAD
 - [Google Colab Link](https://colab.research.google.com/drive/1E6rILWpl5rjAp-ModE9u0PlUhbv0N59c)
-=======
-- [Google Colab Link](https://colab.research.google.com/drive/1E6rILWpl5rjAp-ModE9u0PlUhbv0N59c)
->>>>>>> ce65e87cfea5bcd1ff984033877f471015889406
-=======
+
+___
+
 Grid Search:
 ------------
 
