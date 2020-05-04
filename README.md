@@ -188,7 +188,7 @@ Results:
 Running Context Summarization:
 ------------------------------
 
-- TODO Suryanshu Google Colab Link
+- [Google Colab link](https://colab.research.google.com/drive/17I7_b5QTOWpdKhUzywyTFWXjSz6hDo3x?authuser=1)
 
 Results:
 
