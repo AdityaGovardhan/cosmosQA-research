@@ -37,7 +37,7 @@ Individual Efforts:
 7. Preliminary results and conclusions are well documented in /COSMOS_QA__Phase_1_Report_CSE_576.pdf
 8. Currently working on implementing the semi-supervised approach for multiple choice question answering task as defined here in the paper - [Improving Language Understanding
 by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) by OpenAI on the [official CosmosQA dataset](https://github.com/wilburOne/cosmosqa/tree/master/data/)
-9. The results and code for this approach are stored in the folder Semi-Supervised Approach.
+9. The script to run the code, results and model details for this approach are stored in the folder Semi-Supervised Approach.
 
 - Aditya :
 1. Random baseline model provided by Allen AI setup, ran and tested on [Google Colab](https://colab.research.google.com/drive/12ufgKApJTgajMzcasmyYMRwxWrCe-ws5)
@@ -86,3 +86,11 @@ Running RoBERTa base:
 ---------------------
 - This RoBERTa base model is provided by [huggingface](https://huggingface.co/transformers/model_doc/roberta.html)
 - [Google Colab link](https://colab.research.google.com/drive/1TL8QsMCY2zog_KYjiVbyi3WN5l_r-uAA)
+
+___
+
+Running RoBERTa-Base Uncased (Sem-Sup Approach):
+-----------------------------------------------
+- Semi-Supervised approach for multiple choice question answering task as defined here in the paper - [Improving Language Understanding
+by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) by OpenAI on the [official CosmosQA dataset](https://github.com/wilburOne/cosmosqa/tree/master/data/)
+- [Google Colab Link](https://colab.research.google.com/drive/1E6rILWpl5rjAp-ModE9u0PlUhbv0N59c)
