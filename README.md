@@ -28,13 +28,13 @@ Best Results:
 
 | Model | Gradient Accumulation Step | Number of Epochs | Learning Rate | Maximum Sequence Length | Batch Size | Accuracy |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| roberta-base (phase 1 results) | 2 | 3 | 5 e-05 | 80 | 16 | 65.92% |
-| roberta-base (grid search) | 3 | 5 | 5 e-05 | 192 | 16 | 68.87% |
-| roberta-base-uncased (Semi Supervised approach) | 3 | 3 | 2 e-05 | 100 | 8 | 61.13% |
-| roberta-base + finetuned on SocialIQA | 3 | 6 | 5 E-05 | 192 | 16 | 67.75 |
-| roberta-base + finetuned on SocialIQA + COSMOS finetuned | 3 | 6 | 5 E-05 | 192 | 16 | 66.2 |
-| roberta-base + sumarization + COSMOS | 3 | 5 | 5.00E-05 | 192 | 16 | 63.31 |
-| roberta-base + context + summarization + COSMOS | 3 | 5 | 5.00E-05 | 192 | 16 | 67.57 |
+| roberta-base (phase 1 results) | 2 | 3 | 5 e-5 | 80 | 16 | 65.92% |
+| roberta-base (grid search) | 3 | 5 | 5 e-5 | 192 | 16 | 68.87% |
+| roberta-base-uncased (Semi Supervised approach) | 3 | 3 | 2 e-5 | 100 | 8 | 61.13% |
+| roberta-base + finetuned on SocialIQA | 3 | 6 | 5 e-5 | 192 | 16 | 67.75% |
+| roberta-base + finetuned on SocialIQA + COSMOS finetuned | 3 | 6 | 5 e-5 | 192 | 16 | 66.2% |
+| roberta-base + sumarization + COSMOS | 3 | 5 | 5 e-5 | 192 | 16 | 63.31% |
+| roberta-base + context + summarization + COSMOS | 3 | 5 | 5 e-5 | 192 | 16 | 67.57% |
 
 Conclusion:
 ===========
@@ -54,7 +54,7 @@ Individual Efforts:
 5. Performed Error Analysis on 15 samples from 1000-1500 in the Validation set data
 6. Finetuning roberta-base model on SocialIQA dataset for incorporating social knowledge.
 7. Increased performance by finetuning on SocialIQA dataset on roberta-base from 65.92% to 67.75%. Let's call this model roberta_social_iqa.
-8. Finetuned and generated a performance of 66.2 roberta_social_iqa on the COSMOS_QA to boost performance. [Google Colab](https://colab.research.google.com/drive/1QMJVB5Pf24d3x8A5OAuB4Xo7UVN3ngk-?authuser=2) TODO Kunal link not working
+8. Finetuned and generated a performance of 66.2 roberta_social_iqa on the COSMOS_QA to boost performance. [Google Colab](https://colab.research.google.com/drive/1QMJVB5Pf24d3x8A5OAuB4Xo7UVN3ngk-)
 
 - Jay : 
 1. Was able to run the cosmosqa_wilburOne on my local CPU machine (without GPUs), but since the training + evaluation with huge datasize shall take time, trying to host the process on either Google Colab/Cloud Shell - but facing issues with installing Nvidia/Apex and few other version conflicts.
@@ -176,7 +176,7 @@ Results:
 Running External Knowledge Infusion (SocialIQA Dataset):
 --------------------------------------------------------
 
-- TODO Kunal Google Colab Link not working 
+- [Google Colab Link](https://colab.research.google.com/drive/1QMJVB5Pf24d3x8A5OAuB4Xo7UVN3ngk-)
 
 Results:
 
@@ -188,7 +188,7 @@ Results:
 Running Context Summarization:
 ------------------------------
 
-- TODO Suryanshu Google Colab Link
+- [Google Colab Link](https://colab.research.google.com/drive/17I7_b5QTOWpdKhUzywyTFWXjSz6hDo3x?authuser=1)
 
 Results:
 
