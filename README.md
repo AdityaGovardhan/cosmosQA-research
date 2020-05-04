@@ -17,11 +17,12 @@ Status:
 
 - SocialIQA approach TODO Kunal
 
-- Semi-supervised approach TODO Jay
+- Semi-Supervised approach: Hypothesis behind this approach is to explore a semi-supervised  approach for language understanding tasks using a combination of unsupervised pre-training and supervised fine-tuning. ([Google Colab Link](https://colab.research.google.com/drive/1E6rILWpl5rjAp-ModE9u0PlUhbv0N59c))
 
 - Several approaches like K-Bert & K-Adapter are explored but couldn't work in available timeframe.
 
 - Two approaches implemented: Extractive replacing paragraph & Extractive appending paragraph. The later one obtained accuracy of 67.57% and was an improvement over baseline.[Google Colab Link](https://colab.research.google.com/drive/17I7_b5QTOWpdKhUzywyTFWXjSz6hDo3x?authuser=1)
+
 
 Best Results:
 =============
@@ -39,7 +40,9 @@ Best Results:
 Conclusion:
 ===========
 
-TODO Jay (copy paste from report what you think is apt for a quick read)
+Based on the error analysis on baselines models, we tried to make modifications in the existing models such that the model can learn more implicit knowledge and the context. The reason model on Social IQA performed better than existing results, is because of the similarities in dataset and task we are trying to achieve. Whereas, semi-supervised approach did not give any performance boosts for the same reason.
+
+One the next steps for us would be to use pre-trained model on Social-IQA dataset to be used on cosmosqa dataset using the semi-supervised approach. Since summarization had better results than our baseline models, we use that approach to summarize the context for each data sample and use that in the fine-tuning of the model before evaluation. With a trade-off on training time, we expect such a model to perform better than the baselines.  
 
 ___
 
@@ -148,6 +151,8 @@ Results:
 | roberta-base | 3 | 5 | 5 e-5 | 192 | 16 | 68.87% |
 | roberta-base | 3 | 6 | 5 e-5 | 192 | 16 | 65.92% |
 
+___
+
 Other Models:
 -------------
 
@@ -158,6 +163,7 @@ Results:
 | bert-base-uncased | 1 | 3 | 5 e-5 | 128 | 32 | 60.63% |
 | bert-large-uncased | 2 | 3 | 5 e-5 | 64 | 12 | 25.09% |
 
+___
 
 Running RoBERTa-Base Uncased (Sem-Supervised Approach):
 -------------------------------------------------------
@@ -173,6 +179,8 @@ Results:
 | roberta-base | 3 | 4 | 5 e-5 | 80 | 64 | 67.2 |
 | roberta-base-uncased | 3 | 3 | 2 e-5 | 100 | 8 | 61.13 |
 
+___
+
 Running External Knowledge Infusion (SocialIQA Dataset):
 --------------------------------------------------------
 
@@ -184,6 +192,8 @@ Results:
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | roberta-base + finetuned on SocialIQA | 3 | 6 | 5 E-05 | 192 | 16 | 67.75 |
 | roberta-base + finetuned on SocialIQA + COSMOS finetuned | 3 | 6 | 5 E-05 | 192 | 16 | 66.2 |
+
+___
 
 Running Context Summarization:
 ------------------------------
